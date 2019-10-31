@@ -49,11 +49,10 @@ end
 def hit?(card_total)
     # code hit?(prompt_user)
     puts "Type 'h' to hit or 's' to stay"
-    store_name = get_user_input
+    store_input =get_user_input
     card_total
-    store_name1 = get_user_input
     #binding.pry
-  
+    
 end
 
 def invalid_command
