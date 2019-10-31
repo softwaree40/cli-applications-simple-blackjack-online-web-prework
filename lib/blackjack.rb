@@ -48,8 +48,12 @@ end
 
 def hit?(card_total)
     # code hit?(prompt_user)
+    prompt_user
+    store_name = get_user_input
     
+    card_total
     
+    #binding.pry
 end
 
 def invalid_command
