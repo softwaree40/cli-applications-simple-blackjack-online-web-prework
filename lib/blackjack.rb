@@ -18,6 +18,7 @@ end
 def display_card_total(card_total)
     puts "Your cards add up to #{card_total}"
   # code #display_card_total here
+  #binding.pry
 end
 
 def prompt_user
@@ -39,16 +40,14 @@ end
 def initial_round
       sum = deal_card + deal_card
       puts "/Your cards add up to /"
-    #binding.pry
+    
    # code #deal_card here 
      sum 
+     #binding.pry
 end
 
-def hit?(prompt_user)
-    puts "Type 'h' to hit or 's' to stay"
-    #binding.pry
-  # code hit?(prompt_user)
-    card_total =get_user_input
+def hit?(card_total)
+    # code hit?(prompt_user)
     
     
 end
