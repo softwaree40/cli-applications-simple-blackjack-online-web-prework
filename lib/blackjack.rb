@@ -51,7 +51,7 @@ def hit?(card_total)
     puts "Type 'h' to hit or 's' to stay"
     store_name = get_user_input
     card_total
-    
+    store_name1 = get_user_input
     #binding.pry
   
 end
