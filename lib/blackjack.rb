@@ -9,7 +9,9 @@ def deal_card
   # code #deal_card here
   if card < 0
   else
+
     #binding.pry
+
     return card
    end
    
@@ -38,20 +40,37 @@ def end_game(card_total)
 end
 
 def initial_round
+
       sum = deal_card + deal_card
       puts "/Your cards add up to /"
     
    # code #deal_card here 
      sum 
      #binding.pry
+
+    
+      
+  # code #initial_round here
+  
+    return sum
+
 end
 
 def hit?(card_total)
     # code hit?(prompt_user)
     puts "Type 'h' to hit or 's' to stay"
-    store_input =get_user_input
+    store_input = get_user_input
+    if store_input == 'h'
+      new_card = deal_card
+      card_total += new_card
+    elsif store_input == 's'
     card_total
+     else
+        invalid_command
+    hit?(card_total)
+        
     #binding.pry
+  end
     
 end
 
@@ -66,5 +85,17 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round
+  
+  hit?(card_total)
+  display_card_total(card_total)
+  if initial_round > 21
+  
+  end_game(card_total)
+  puts "/Your cards add up to #{card_total}/"
+  end
+  
 end
+ 
     
