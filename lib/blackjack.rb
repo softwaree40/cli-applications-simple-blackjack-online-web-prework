@@ -48,8 +48,15 @@ def initial_round
      sum 
      #binding.pry
 
+
     # code #initial_round here
   
+
+    
+      
+  # code #initial_round here
+  
+
     return sum
 
 end
@@ -84,10 +91,9 @@ def runner
   welcome
   initial_round
   hit?(card_total)
-  display_card_total(card_total)
   if initial_round > 21
     end_game(card_total)
-    puts "Your cards add up to #{card_total}"
+    display_card_total(card_total)
   end
 end
   
